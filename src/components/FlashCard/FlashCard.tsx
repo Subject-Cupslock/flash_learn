@@ -12,7 +12,10 @@ export const FlashCard = ({
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
-    <div className="card-container" onClick={() => setIsFlipped(!isFlipped)}>
+    <div
+      className="card-container mb-5"
+      onClick={() => setIsFlipped(!isFlipped)}
+    >
       <div className={`card-inner ${isFlipped ? "is-flipped" : ""}`}>
         <div className="card-face card-front drop-shadow-2xl bg-[#f1f0f0] absolute">
           Вопрос: {question}
